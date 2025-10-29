@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, ul{
+	padding-top:.5em;
+	padding-bottom: .5em;
+}
+
+ul {
+	margin-left: 2em;
+}
+
+/* custom property */
+:root {
+	--accent-color: #800000;  /* could also be coded #800 */
+}
+
+/* default styles */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 80%;
+	margin: auto;
+	border: 2px solid var(--accent-color);
+}
+a:hover, a:focus{
+	font-style: italic;
+	color: var(--accent-color);
+}
+h1 {
+	font-size: 150%;
+}
+h2 {
+	font-size: 130%;
+	color: var(--accent-color);
+}
+h3 {
+	font-size: 105%;
+}
+
+/* the styles for the header */
+header {
+	& h2 {
+		font-size: 175%;
+	}
+	& h3 {
+		font-size: 130%;
+		font-style: italic;
+	}
+	& img {
+		float: left;
+	}
+}
+
+header img {
+	margin: .75em 1em;
+}
+
+header h2 {
+	padding-bottom:0;
+}
+
+header h3 {
+	padding-bottom: 1em;
+}
+
+header {
+	border-bottom: 2px solid var(--accent-color);
+}
+
+/* the styles for the main content */
+main {
+	clear: left;
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+}
+
+/* the styles for the footer */
+footer {
+	& p {
+		text-align: center;
+	}
+}
+
+footer p {
+	color: white;
+}
+
+footer {
+	background: var(--accent-color);
+}
+
+/* CSS class */
+.large {
+	font-size: 125%;
+}
+
+main h1 {
+	border-top: 2px solid var(--accent-color);
+	border-bottom: 2px solid var(--accent-color);
+}
